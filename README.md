@@ -1,8 +1,20 @@
 # SkillEvoReg: Regularizing Self-Evolving Agent Skills
 
-SkillEvoReg integrates training-time skill dropout, complexity-aware local
-editing, and Causal Counterexample Validation (CCV) into SkillOpt,
-SkillEvolBench, and ContinualSkillBench.
+Agents can improve from experience by continually updating reusable skills,
+but repeated updates can also accumulate redundant or task-specific rules and
+break previously successful behaviors. **SkillEvoReg** brings regularization
+principles from neural-network training to this skill-evolution process,
+without replacing the host framework's native skill updater.
+
+It combines **training-time skill dropout** to reduce reliance on individual
+instructions, **complexity-aware local editing** to control unnecessary skill
+growth, and **Causal Counterexample Validation (CCV)** to detect behavioral
+regressions through paired incumbent/candidate checks and trigger targeted
+repairs. This repository includes integrations with **SkillOpt**,
+**SkillEvolBench**, and **ContinualSkillBench**, retaining each host's native
+acceptance or commit mechanism.
+
+![SkillEvoReg overview: training-time skill dropout, native skill evolution, local regularization, CCV, and native validation or commit.](docs/assets/skillevoreg-overview.png)
 
 ## Setup
 
