@@ -1,0 +1,43 @@
+name: selfgen_experience_always_twopass
+description: Two complete unregularized T1-T3 learning passes before frozen evaluation.
+track: path-a
+skill_init: empty
+allow_self_gen_induction: true
+allow_zero_shot_creation: false
+allow_curated_inject: false
+allow_revision: true
+allow_retirement: false
+allow_quarantine: false
+allow_applicability_narrow: false
+allow_rollback: false
+use_skill_library: true
+use_trajectory_rag: false
+use_history_context: false
+use_feedback_memory: false
+library_scope: environment
+history_context_max_tokens: 8000
+trajectory_retrieval_k: 3
+skill_retrieval_k: 8
+retriever_type: llm_self
+retrieval_family_boost: 0.0
+retrieval_phase_aware: true
+enforce_same_family_target: true
+dual_t6_retrieval: false
+within_env_replay: true
+replay_eval: false
+feedback_level: process
+feedback_to_skill_text: true
+feedback_to_memory: false
+allow_post_eval_maintenance: false
+default_strategy: chain
+revision_trigger: always
+max_revisions_per_skill: 7
+harbor_agent_name: codex
+model_name: openai/gpt-5.4-mini
+agent_kwargs:
+  base_url: https://yibuapi.com/v1
+  provider: yibu
+  env_key: OPENAI_API_KEY
+  wire_api: responses
+  verbosity: medium
+  reasoning_effort: medium

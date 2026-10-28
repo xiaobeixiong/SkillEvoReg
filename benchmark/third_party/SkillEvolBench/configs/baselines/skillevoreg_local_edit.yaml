@@ -1,0 +1,36 @@
+# SkillEvoReg with immediate, unevaluated consumption of actionable Regularization
+# findings. All baseline capabilities and task/update semantics match the
+# deferred variant; only the timing of Regularization feedback consumption differs.
+name: skillevoreg_local_edit
+description: Self-generated skills with complexity, atomic-dropout, CCV, and immediate Regularization correction.
+track: path-a
+
+skill_init: empty
+allow_self_gen_induction: true
+allow_zero_shot_creation: false
+allow_curated_inject: false
+
+allow_revision: true
+allow_retirement: false
+allow_quarantine: false
+allow_applicability_narrow: false
+allow_rollback: false
+
+use_skill_library: true
+skill_retrieval_k: 8
+library_scope: environment
+retrieval_phase_aware: true
+enforce_same_family_target: true
+
+feedback_level: process
+feedback_to_skill_text: true
+
+default_strategy: chain_skillevoreg_local_edit
+revision_trigger: always
+max_revisions_per_skill: 5
+
+within_env_replay: true
+replay_eval: false
+
+harbor_agent_name: codex
+model_name: openai/gpt-5.4-mini

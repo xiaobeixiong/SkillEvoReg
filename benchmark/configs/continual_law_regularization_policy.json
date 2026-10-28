@@ -1,0 +1,13 @@
+{
+  "seed": 101,
+  "dropout": {"rate": 0.05, "max_atoms": 4, "ensure_at_least_one": true},
+  "retrieval": {"tau": 0.65, "rho": 0.45, "top_k": 3},
+  "budgets": {
+    "create_complexity_budget": 40.0,
+    "modify_relative_growth": 0.10,
+    "create_atom_budget": 40,
+    "modify_atom_growth": 2,
+    "ccv_minimum_drop": 0.1
+  },
+  "probe_timeout": 600
+}

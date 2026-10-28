@@ -1,0 +1,9 @@
+{
+  "source": "benchmark/data/raw/continualskillbench/upstream/Continual-Skill-Bench/tasks/finance-econ-100",
+  "sha256": {
+    "instruction.md": "4398b5168741d0d04292dec68dffe50ba1f91772aad3865903942cee55d309ef",
+    "environment/tasks_spec.json": "9e9cf9a72348102d322621a6122d7e8ae82235853946c67b2c152d65d8e36181"
+  },
+  "train_task_ids": [1, 50],
+  "holdout_task_ids": [51, 100]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "skillopt_official_expanded_100_100_200_v1",
+  "counts": {
+    "train": 100,
+    "val": 100,
+    "test": 200
+  },
+  "seed": 20260808,
+  "id_sha256": {
+    "train": "5670f46014c4a340b849351ec8a5d239576a5437315019119a34869d5833fb10",
+    "val": "2f8296c3d3abb951a3fc505927cae4af95b58ce7e6708a61c0f40abcf154c48d",
+    "test": "e34314b11f0a89a235e78adc86cfe575015f1275503bef841985dc3ec807558a"
+  },
+  "source_dataset": "./benchmark/data/extracted/spreadsheetbench_verified_400/dataset.json"
+}

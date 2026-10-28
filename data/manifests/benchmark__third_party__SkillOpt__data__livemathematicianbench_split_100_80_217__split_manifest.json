@@ -1,0 +1,11 @@
+{
+  "benchmark": "LiveMathematicianBench",
+  "counts": {
+    "train": 100,
+    "val": 80,
+    "test": 217
+  },
+  "split_seed": 101,
+  "core_source_revision": "b72450f6ce96c26158d64d945a5d31ef7727be41",
+  "extension_source_revision": "6f53c5ff7227633ea954b2847cd590314d582047"
+}

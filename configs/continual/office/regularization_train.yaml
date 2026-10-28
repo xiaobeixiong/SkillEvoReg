@@ -1,0 +1,31 @@
+job_name: continual_office_regularization_train
+jobs_dir: benchmark/outputs/continualskillbench
+n_attempts: 1
+timeout_multiplier: 1.0
+orchestrator:
+  type: local
+  n_concurrent_trials: 1
+  quiet: true
+  retry:
+    max_retries: 0
+environment:
+  type: docker
+  force_build: false
+  delete: false
+agents:
+- import_path: continual_regularization.agent:OfficeRegularization
+  model_name: openai/gpt-5.4-mini
+  override_setup_timeout_sec: 600
+  override_timeout_sec: .inf
+  kwargs:
+    reasoning_effort: medium
+    enable_judge_feedback: true
+    judge_model: openai/gpt-5.4-mini
+    judge_pass_threshold: 0.6
+    enable_skill_probe: false
+    compact_every_n: 1
+    regularization_config_path: benchmark/configs/continual_office_regularization_policy.json
+datasets:
+- path: benchmark/runtime/continualskillbench/tasks
+  task_names:
+  - office-100-train50

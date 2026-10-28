@@ -1,0 +1,6 @@
+-e ./benchmark/third_party/SkillOpt
+pytest>=8
+json-repair>=0.61
+tiktoken>=0.9
+huggingface-hub>=0.30
+rich>=14

@@ -1,0 +1,8 @@
+{
+  "counts": {
+    "train": 400,
+    "val": 200,
+    "test": 1400
+  },
+  "source_dataset": "lucadiliello/searchqa"
+}

@@ -1,0 +1,7 @@
+{
+  "source_commit": "083f14de18227a1eed15758eb1a80632966525c0",
+  "sha256": {
+    "instruction.md": "09c59b8b810937c4fc29c822e2511436610440944359af9a9165d6e92a5c9751",
+    "environment/tasks_spec.json": "b0c19c07b8ccf08dffcf013a8cd952809e8c5e1909a0ca9ef5486f7bcbd64059"
+  }
+}

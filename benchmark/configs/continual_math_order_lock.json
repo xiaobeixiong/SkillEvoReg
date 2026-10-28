@@ -1,0 +1,10 @@
+{
+  "domain": "math-100",
+  "order": "official_instruction_sequence_no_shuffle",
+  "task_count": 100,
+  "shared_by": ["baseline", "regularization"],
+  "sha256": {
+    "instruction.md": "5825ef790be3159d38c92a50d3f526b747742e8eb703292d05a8b7a1fa3914c1",
+    "environment/tasks_spec.json": "e8dd99eecc7e06050c895f45fd48f919f7ea6bb6763608d80031eaae768b2130"
+  }
+}

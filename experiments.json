@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "experiments": {
+    "skillopt/spreadsheet/baseline": {
+      "config": "configs/skillopt/spreadsheet/baseline.yaml"
+    },
+    "skillopt/spreadsheet/skillevoreg": {
+      "config": "configs/skillopt/spreadsheet/skillevoreg.yaml"
+    },
+    "skillopt/searchqa/baseline": {
+      "config": "configs/skillopt/searchqa/baseline.yaml"
+    },
+    "skillopt/searchqa/skillevoreg": {
+      "config": "configs/skillopt/searchqa/skillevoreg.yaml"
+    },
+    "skillopt/livemath/baseline": {
+      "config": "configs/skillopt/livemath/baseline.yaml"
+    },
+    "skillopt/livemath/skillevoreg": {
+      "config": "configs/skillopt/livemath/skillevoreg.yaml"
+    },
+    "continual/math/baseline/train": {
+      "config": "configs/continual/math/baseline_train.yaml"
+    },
+    "continual/math/baseline/test": {
+      "config": "configs/continual/math/baseline_test.yaml"
+    },
+    "continual/math/regularization/train": {
+      "config": "configs/continual/math/regularization_train.yaml"
+    },
+    "continual/math/regularization/test": {
+      "config": "configs/continual/math/regularization_test.yaml"
+    },
+    "continual/finance/baseline/train": {
+      "config": "configs/continual/finance/baseline_train.yaml"
+    },
+    "continual/finance/baseline/test": {
+      "config": "configs/continual/finance/baseline_test.yaml"
+    },
+    "continual/finance/regularization/train": {
+      "config": "configs/continual/finance/regularization_train.yaml"
+    },
+    "continual/finance/regularization/test": {
+      "config": "configs/continual/finance/regularization_test.yaml"
+    },
+    "continual/law/baseline/train": {
+      "config": "configs/continual/law/baseline_train.yaml"
+    },
+    "continual/law/baseline/test": {
+      "config": "configs/continual/law/baseline_test.yaml"
+    },
+    "continual/law/regularization/train": {
+      "config": "configs/continual/law/regularization_train.yaml"
+    },
+    "continual/law/regularization/test": {
+      "config": "configs/continual/law/regularization_test.yaml"
+    },
+    "continual/healthcare/baseline/train": {
+      "config": "configs/continual/healthcare/baseline_train.yaml"
+    },
+    "continual/healthcare/baseline/test": {
+      "config": "configs/continual/healthcare/baseline_test.yaml"
+    },
+    "continual/healthcare/regularization/train": {
+      "config": "configs/continual/healthcare/regularization_train.yaml"
+    },
+    "continual/healthcare/regularization/test": {
+      "config": "configs/continual/healthcare/regularization_test.yaml"
+    },
+    "continual/office/baseline/train": {
+      "config": "configs/continual/office/baseline_train.yaml"
+    },
+    "continual/office/baseline/test": {
+      "config": "configs/continual/office/baseline_test.yaml"
+    },
+    "continual/office/regularization/train": {
+      "config": "configs/continual/office/regularization_train.yaml"
+    },
+    "continual/office/regularization/test": {
+      "config": "configs/continual/office/regularization_test.yaml"
+    },
+    "skillevolbench/baseline": {
+      "baseline": "configs/skillevolbench/baseline_baseline.yaml",
+      "strategy": "configs/skillevolbench/baseline_strategy.yaml"
+    },
+    "skillevolbench/twopass": {
+      "baseline": "configs/skillevolbench/twopass_baseline.yaml",
+      "strategy": "configs/skillevolbench/twopass_strategy.yaml"
+    },
+    "skillevolbench/skillevoreg": {
+      "baseline": "configs/skillevolbench/skillevoreg_baseline.yaml",
+      "strategy": "configs/skillevolbench/skillevoreg_strategy.yaml"
+    }
+  }
+}

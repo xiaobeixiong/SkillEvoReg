@@ -1,0 +1,11 @@
+# Use a separate environment. The launcher selects vendor/harbor_continual/src
+# before the installed Harbor to retain the patched sequential judge/runtime.
+-r skillevolbench.txt
+daytona>=0.121
+modal>=1.3
+e2b>=2.4
+dockerfile-parse>=2.0
+datasets>=4.4
+runloop-api-client>=1.2
+kubernetes>=32
+claude-agent-sdk>=0.1.17

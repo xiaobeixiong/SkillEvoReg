@@ -1,0 +1,42 @@
+name: chain_skillevoreg_local_edit
+n_candidates: 1
+candidate_modes: ["free_form"]
+
+author_model: openai/gpt-5.4-mini
+author_temperature: 0.2
+author_max_tokens: 16384
+
+shared_t1_anchor_manifest: null
+shared_t1_anchor_required: false
+# The run launcher loads a complete frozen T1-T3 pass-1 library.  Pass 1 is
+# therefore omitted by RunConfig; the pass-2 scheduler must still execute all
+# of T1/T2/T3 and must not activate the separate "shared T1 only" shortcut.
+shared_t1_skip_execution: false
+
+regularization_start_learning_pass: 2
+regularization_proposal_regularization: true
+regularization_step_local_pipeline: true
+regularization_complexity_lambda: 0.15
+regularization_free_growth: 0.10
+regularization_hard_complexity_enabled: true
+regularization_hard_max_relative_growth: 0.15
+regularization_hard_max_atom_growth: 4
+
+regularization_dropout_enabled: true
+regularization_dropout_probability: 0.05
+regularization_dropout_max_atoms: 4
+regularization_dropout_min_eligible_atoms: 4
+regularization_dropout_ensure_at_least_one: true
+
+regularization_ccv_enabled: true
+regularization_ccv_schedule: per_step
+regularization_ccv_roles: ["canonical", "enriched", "variant"]
+regularization_ccv_max_appendix_chars: 1600
+regularization_ccv_generation_retries: 2
+regularization_ccv_deterministic_fallback: false
+regularization_ccv_min_old_score: 0.80
+regularization_ccv_min_regression_drop: 0.05
+
+regularization_consumption_mode: local_edit
+regularization_embedding_model: BAAI/bge-base-en-v1.5
+regularization_embedding_match_threshold: 0.75
